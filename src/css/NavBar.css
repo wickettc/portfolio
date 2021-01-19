@@ -1,0 +1,16 @@
+.nav-bar {
+    width: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+}
