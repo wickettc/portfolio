@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
@@ -7,11 +7,25 @@ import Projects from '../pages/Projects';
 import '../css/NavBar.css';
 
 const NavBar = () => {
+    const [openNavBar, setOpenNavBar] = useState(false);
+    const [hideNav, setHideNav] = useState(true);
+
     return (
         <Router>
             <div>
-                <nav className="nav-bar">
-                    <ul>
+                <div
+                    onClick={() => {
+                        setOpenNavBar(!openNavBar);
+                        openNavBar ? setHideNav(true) : setHideNav(false);
+                    }}
+                    className={`nav-hamburger ${openNavBar ? 'change' : ''}`}
+                >
+                    <div className="top-bar"></div>
+                    <div className="middle-bar"></div>
+                    <div className="bottom-bar"></div>
+                </div>
+                <nav className="nav-bar hide-nav-bar">
+                    <ul className={`${hideNav ? 'hide' : ''}`}>
                         <li>
                             <Link to="/">Home</Link>
                         </li>

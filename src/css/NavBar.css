@@ -1,10 +1,24 @@
 .nav-bar {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.nav-bar .hide {
     width: 100%;
+    display: none;
+}
+
+nav.nav-bar.hide-nav-bar {
+    background-color: rgb(128, 128, 128, 0.5);
+    border-top-right-radius: 35%;
+    border-top-left-radius: 35%;
 }
 
 .nav-bar ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .nav-bar li {
@@ -13,4 +27,54 @@
 
 .nav-bar li a {
     text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.nav-bar li a:hover {
+    color: blue;
+}
+
+.nav-hamburger {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+    margin-right: 25px;
+    z-index: 1000;
+}
+
+.nav-hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .top-bar {
+    -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.change .middle-bar {
+    opacity: 0;
+}
+
+.change .bottom-bar {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 }
