@@ -4,17 +4,36 @@
     height: 100vh;
     width: 100%;
     justify-content: center;
-    align-items: center;
-    color: white;
-    -webkit-text-stroke: 0.5px black;
-    font-size: 1.5rem;
+    align-items: flex-start;
+    color: black;
+    font-size: 2.2rem;
+}
+
+.my-name {
+    color: #1843b9;
+    font-weight: 700;
 }
 
 .home-first {
+    margin-bottom: 10px;
+    padding-left: 5%;
+    font-weight: 400;
+
     animation: fly-left 2s ease-in;
 }
 
+.home-second {
+    margin: 0;
+    padding-left: 5%;
+    font-weight: 400;
+    animation: fade-in 3s ease-in;
+}
+
 .home-third {
+    margin-top: 10px;
+    padding-left: 5%;
+    font-weight: 400;
+
     animation: fly-right 2s ease-in;
 }
 
@@ -43,5 +62,14 @@
     100% {
         opacity: 1;
         transform: translateX(0%);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
