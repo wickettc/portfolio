@@ -11,7 +11,7 @@
 }
 
 nav.nav-bar.hide-nav-bar {
-    background-color: rgb(128, 128, 128, 0.2);
+    background-color: rgba(128, 128, 128, 0.2);
     border-top-right-radius: 35%;
     border-top-left-radius: 35%;
 }
@@ -35,7 +35,7 @@ nav.nav-bar.hide-nav-bar {
 .nav-bar li a:hover {
     color: #1843b9;
     font-size: 3.5rem;
-    -webkit-text-stroke: 0.1px white;
+    -webkit-text-stroke: 0.05px white;
 }
 
 .nav-hamburger {

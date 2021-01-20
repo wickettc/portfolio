@@ -27,16 +27,48 @@ const NavBar = () => {
                 <nav className="nav-bar hide-nav-bar">
                     <ul className={`${hideNav ? 'hide' : ''}`}>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link
+                                onClick={() => {
+                                    setOpenNavBar(false);
+                                    setHideNav(true);
+                                }}
+                                to="/"
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/about">About</Link>
+                            <Link
+                                onClick={() => {
+                                    setOpenNavBar(false);
+                                    setHideNav(true);
+                                }}
+                                to="/about"
+                            >
+                                About
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link
+                                onClick={() => {
+                                    setOpenNavBar(false);
+                                    setHideNav(true);
+                                }}
+                                to="/contact"
+                            >
+                                Contact
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/projects">Projects</Link>
+                            <Link
+                                onClick={() => {
+                                    setOpenNavBar(false);
+                                    setHideNav(true);
+                                }}
+                                to="/projects"
+                            >
+                                Projects
+                            </Link>
                         </li>
                     </ul>
                 </nav>

@@ -12,6 +12,7 @@
     align-items: flex-start;
     color: black;
     font-size: 2.2rem;
+    padding-left: 3%;
 }
 
 .home-logo-container {
@@ -23,7 +24,8 @@
 }
 
 .my-logo {
-    animation: fade-down 2s ease-in;
+    animation: fade-down 2s ease-in-out;
+    height: 62%;
 }
 
 .my-name {
@@ -31,25 +33,29 @@
     font-weight: 700;
 }
 
+.home-break {
+    display: block;
+}
+
 .home-first {
     margin-bottom: 10px;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     font-weight: 400;
-    animation: fly-left 2s ease-in;
+    animation: fly-left 2s ease-in-out;
 }
 
 .home-second {
     margin: 0;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     font-weight: 400;
-    animation: fade-in 3s ease-in;
+    animation: fade-in 3s ease-in-out;
 }
 
 .home-third {
     margin-top: 10px;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     font-weight: 400;
-    animation: fly-right 2s ease-in;
+    animation: fly-right 2s ease-in-out;
 }
 
 @keyframes fly-left {
@@ -95,7 +101,7 @@
         transform: translateY(-200%);
     }
     80% {
-        transform: translateY(5%);
+        transform: translateY(1%);
     }
     100% {
         transform: translateY(0%);
