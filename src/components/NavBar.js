@@ -6,26 +6,32 @@ const NavBar = () => {
     const [openNavBar, setOpenNavBar] = useState(false);
     const [hideNav, setHideNav] = useState(true);
     const navBar = useRef(null);
+    const navHamburger = useRef(null);
 
     useEffect(() => {
         const handleClick = (e) => {
+            console.log(e.target, navHamburger);
             if (openNavBar && !hideNav) {
-                if (navBar.current && !navBar.current.contains(e.target)) {
+                if (
+                    navHamburger.current.contains(e.target) ||
+                    !navBar.current.contains(e.target)
+                ) {
                     setOpenNavBar(false);
                     setHideNav(true);
                 }
             }
         };
 
-        document.addEventListener('mousedown', handleClick);
+        document.addEventListener('click', handleClick);
         return () => {
-            document.removeEventListener('mousedown', handleClick);
+            document.removeEventListener('click', handleClick);
         };
     }, [openNavBar, hideNav]);
 
     return (
         <div>
             <div
+                ref={navHamburger}
                 onClick={() => {
                     setOpenNavBar(!openNavBar);
                     openNavBar ? setHideNav(true) : setHideNav(false);
