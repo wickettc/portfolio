@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/NavBar.css';
 
 const NavBar = () => {
     const [openNavBar, setOpenNavBar] = useState(false);
     const [hideNav, setHideNav] = useState(true);
+    const navBar = useRef(null);
+
+    useEffect(() => {
+        const handleClick = (e) => {
+            if (openNavBar && !hideNav) {
+                if (navBar.current && !navBar.current.contains(e.target)) {
+                    setOpenNavBar(false);
+                    setHideNav(true);
+                }
+            }
+        };
+
+        document.addEventListener('mousedown', handleClick);
+        return () => {
+            document.removeEventListener('mousedown', handleClick);
+        };
+    }, [openNavBar, hideNav]);
 
     return (
         <div>
@@ -19,7 +36,7 @@ const NavBar = () => {
                 <div className="middle-bar"></div>
                 <div className="bottom-bar"></div>
             </div>
-            <nav className="nav-bar hide-nav-bar">
+            <nav ref={navBar} className="nav-bar hide-nav-bar">
                 <ul className={`${hideNav ? 'hide' : ''}`}>
                     <li>
                         <Link
