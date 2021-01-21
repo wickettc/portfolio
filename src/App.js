@@ -5,6 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import NavBar from './components/NavBar';
+import LinkBar from './components/LinkBar';
 import './css/App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Router>
             <div>
                 <NavBar />
+                <LinkBar />
                 <Switch>
                     <Route exact path="/">
                         <Home />

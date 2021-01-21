@@ -1,0 +1,18 @@
+.linkbar-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 50%;
+    z-index: 50000;
+}
+
+.linkbar-container svg {
+    fill: rgba(0, 0, 0, 0.7);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.linkbar-container svg:hover {
+    fill: rgba(10, 9, 9, 0.514);
+}
