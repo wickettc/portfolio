@@ -3,12 +3,14 @@ import '../css/Contact.css';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const [sendName, setSendName] = useState('');
-    const [sendEmail, setSendEmail] = useState('');
-    const [sendBody, setSendBody] = useState('');
+    const [fromName, setFromName] = useState('');
+    const [returnEmail, setReturnEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [sending, setSending] = useState(false);
 
     function sendFormEmail(e) {
         e.preventDefault();
+        setSending(true);
         emailjs
             .sendForm(
                 'service_hjmr08k',
@@ -18,10 +20,18 @@ const Contact = () => {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
+                    alert('Thanks! I will get back to you ASAP!');
+                    setFromName('');
+                    setReturnEmail('');
+                    setMessage('');
+                    setSending(false);
                 },
                 (error) => {
-                    console.log(error.text);
+                    console.log(error);
+                    setFromName('');
+                    setReturnEmail('');
+                    setMessage('That did not work... Please try again later!');
+                    setSending(false);
                 }
             );
     }
@@ -40,39 +50,46 @@ const Contact = () => {
             </div>
             <div className="form-container">
                 <form className="contact-form" onSubmit={sendFormEmail}>
-                    <label htmlFor="send-name">
+                    <label htmlFor="from_name">
                         {' '}
                         Name:
                         <input
                             placeholder="What is your name?"
-                            id="send-subject"
+                            id="from_name"
+                            name="from_name"
                             type="text"
-                            value={sendName}
-                            onChange={(e) => setSendName(e.target.value)}
+                            value={fromName}
+                            onChange={(e) => setFromName(e.target.value)}
                         />
                     </label>
-                    <label htmlFor="send-email">
+                    <label htmlFor="return_email">
                         Email:
                         <input
                             placeholder="How can I reach you?"
-                            id="send-email"
+                            id="return_email"
+                            name="return_email"
                             type="email"
-                            value={sendEmail}
-                            onChange={(e) => setSendEmail(e.target.value)}
+                            value={returnEmail}
+                            onChange={(e) => setReturnEmail(e.target.value)}
                         />
                     </label>
-                    <label htmlFor="send-body">
+                    <label htmlFor="message">
                         Body:
                         <textarea
                             placeholder="Give me some details"
-                            id="send-body"
-                            value={sendBody}
+                            id="message"
+                            name="message"
+                            value={message}
                             rows="15"
                             cols="40"
-                            onChange={(e) => setSendBody(e.target.value)}
+                            onChange={(e) => setMessage(e.target.value)}
                         />
                     </label>
-                    <button>Send</button>
+                    {sending ? (
+                        <div className="loader contact-loader"></div>
+                    ) : (
+                        <button>Send</button>
+                    )}
                 </form>
             </div>
         </div>
