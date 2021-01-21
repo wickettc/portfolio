@@ -3,6 +3,7 @@
     position: absolute;
     bottom: 0;
     right: 10%;
+    z-index: 90000;
 }
 
 .nav-bar .hide {
@@ -46,13 +47,13 @@ nav.nav-bar.hide-nav-bar {
     right: 0;
     margin-bottom: 15px;
     margin-right: 25px;
-    z-index: 1000;
+    z-index: 9000000;
 }
 
 .nav-hamburger div {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: black;
     margin: 6px 0;
     transition: 0.4s;
 }
