@@ -10,7 +10,6 @@ const NavBar = () => {
 
     useEffect(() => {
         const handleClick = (e) => {
-            console.log(e.target, navHamburger);
             if (openNavBar && !hideNav) {
                 if (
                     navHamburger.current.contains(e.target) ||

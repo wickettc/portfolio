@@ -1,9 +1,78 @@
-.projects-container {
+.projects-page-container {
     display: flex;
     height: 100vh;
-
-    background: linear-gradient(0deg, white 50%, #1843b9 50%);
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(0deg, white 80%, #1843b9 20%); */
+    background-color: white;
     animation: 3s load-in-projects ease;
+}
+
+.projects-header-container {
+    font-size: 2.5rem;
+    color: #1843b9;
+}
+
+.projs-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5%;
+    width: 90%;
+}
+
+.projs-container .flip-card {
+    width: 25%;
+}
+
+.proj-flip-card {
+    width: 20%;
+}
+
+.proj-skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proj-skill {
+    border: 1px solid white;
+    width: 50%;
+    margin: 2px;
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.proj-skill:hover {
+    transform: scale(1.2) perspective(1px);
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.proj-button-link {
+    text-decoration: none;
+    width: 50%;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5%;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+}
+
+.proj-button-link:hover {
+    transform: scale(1.5) perspective(5px);
+    border: 1px solid black;
+    color: black;
+    background-color: white;
 }
 
 @keyframes load-in-projects {
