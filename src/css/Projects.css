@@ -13,6 +13,10 @@
     color: #1843b9;
 }
 
+.projects-header-container h1 {
+    margin-bottom: 0;
+}
+
 .projs-container {
     margin-top: 10%;
     display: flex;
