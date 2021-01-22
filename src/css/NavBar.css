@@ -12,7 +12,7 @@
 }
 
 nav.nav-bar.hide-nav-bar {
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: rgba(128, 128, 128, 0.5);
     border-top-right-radius: 35%;
     border-top-left-radius: 35%;
 }
@@ -28,9 +28,9 @@ nav.nav-bar.hide-nav-bar {
 
 .nav-bar li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 3rem;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 .nav-bar li a:hover {
@@ -72,12 +72,22 @@ nav.nav-bar.hide-nav-bar {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .nav-bar ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0;
+    }
+
+    nav.nav-bar.hide-nav-bar {
+        background-color: #1843b9cc;
+    }
+    .nav-bar li a {
+        color: rgb(206, 206, 206);
+    }
+    .nav-bar li a:hover {
+        color: white;
     }
 }

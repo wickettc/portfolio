@@ -45,7 +45,27 @@ const Contact = () => {
                 </h1>
                 <h2 className="contact-title-header-2">
                     Send <span className="contact-title-colored">me</span> a
-                    Message ---{'>'}
+                    Message{' '}
+                    <span className="contact-arrow-right">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+                        </svg>
+                    </span>
+                    <span className="contact-arrow-down">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M12 24l-8-9h6v-15h4v15h6z" />
+                        </svg>
+                    </span>
                 </h2>
             </div>
             <div className="form-container">
@@ -59,6 +79,7 @@ const Contact = () => {
                             name="from_name"
                             type="text"
                             value={fromName}
+                            required
                             onChange={(e) => setFromName(e.target.value)}
                         />
                     </label>
@@ -70,6 +91,7 @@ const Contact = () => {
                             name="return_email"
                             type="email"
                             value={returnEmail}
+                            required
                             onChange={(e) => setReturnEmail(e.target.value)}
                         />
                     </label>
@@ -82,6 +104,7 @@ const Contact = () => {
                             value={message}
                             rows="15"
                             cols="40"
+                            required
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </label>

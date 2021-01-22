@@ -32,6 +32,7 @@
 
 .proj-flip-card {
     width: 20%;
+    height: auto;
 }
 
 .proj-skills-list {
@@ -62,18 +63,17 @@
 
 .proj-button-link {
     text-decoration: none;
-    width: 50%;
+    width: 70%;
     font-size: 1.2rem;
     border: 1px solid white;
     padding: 2px 5px 2px 5px;
     border-radius: 5%;
     color: white;
-    transition: all 0.4s ease-in-out;
-    transform: scale(1);
+    transition: 0.4s ease-in-out;
 }
 
 .proj-button-link:hover {
-    transform: scale(1.5) perspective(5px);
+    font-size: 1.5rem;
     border: 1px solid black;
     color: black;
     background-color: white;
@@ -85,5 +85,71 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+/* media querys */
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .projs-container .flip-card {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .projs-container .flip-card {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .flip-card-contents {
+        text-align: none !important;
+    }
+    .flip-card-front,
+    .flip-card-back {
+        transform: none;
+        position: relative;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+    }
+    .flip-card-contents {
+        position: flex;
+    }
+
+    .flip-card-img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+    .projs-container .flip-card {
+        width: 75%;
+    }
+    .proj-skill {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .projects-header-container {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .projs-container .flip-card {
+        width: 100%;
+    }
+
+    .proj-skill {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    .proj-button-link {
+        font-size: 0.7rem;
+    }
+
+    .projects-header-container {
+        font-size: 1.8rem;
     }
 }

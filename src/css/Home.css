@@ -41,6 +41,7 @@
 .my-name {
     color: #1843b9;
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .home-break {
@@ -115,5 +116,80 @@
     }
     100% {
         transform: translateY(0%);
+    }
+}
+
+/* media query */
+
+@media only screen and (min-width: 1200px) and (max-width: 1290px) {
+    .home-title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .home-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1023px) {
+    .home-title {
+        font-size: 1.5rem;
+    }
+
+    .my-logo {
+        height: 58%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 950px) {
+    .home-title {
+        font-size: 1.2rem;
+    }
+
+    .my-logo {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .home-container {
+        flex-direction: column;
+        background: linear-gradient(180deg, white 5%, #1843b9 95%);
+        height: 100vh;
+    }
+
+    .home-title {
+        height: auto;
+        width: 100vw;
+        padding: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        align-items: center;
+    }
+
+    .home-logo-container {
+        width: 100vw;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .home-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .home-title {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .home-title {
+        font-size: 0.8rem;
+        margin-top: 5%;
     }
 }

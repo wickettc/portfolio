@@ -57,10 +57,10 @@ div.disappear {
 .contact-title-header-2 {
     margin: 0;
     margin-bottom: 5px;
-    animation: 4s fly-in-left ease-in-out;
+    animation: 4s fly-in-message ease-in-out;
 }
 
-@keyframes fly-in-left {
+@keyframes fly-in-message {
     0% {
         opacity: 0;
         transform: translateX(-100%);
@@ -72,6 +72,10 @@ div.disappear {
     100% {
         transform: translateX(0%);
     }
+}
+
+.contact-arrow-down {
+    display: none;
 }
 
 .contact-title-colored {
@@ -87,7 +91,7 @@ div.disappear {
 }
 
 .contact-form {
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,4 +150,89 @@ form button {
 form button:hover {
     color: #1843b9;
     background-color: white;
+}
+
+/* media query */
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .contact-container {
+        background: linear-gradient(115deg, white 50%, #1843b9 50%);
+    }
+    .contact-form {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact-container {
+        background: linear-gradient(101deg, white 50%, #1843b9 50%);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-container {
+        background: linear-gradient(0deg, white 5%, #1843b9 95%);
+        flex-direction: column;
+    }
+
+    .contact-title-container {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0;
+        width: 90%;
+        height: 40%;
+    }
+
+    .contact-title-colored {
+        color: white;
+    }
+
+    .contact-arrow-right {
+        display: none;
+    }
+
+    .contact-arrow-down {
+        margin-top: 3%;
+        display: block;
+    }
+
+    .contact-title-header-2 {
+        padding-top: 2%;
+        animation: 3s fly-in-message ease;
+    }
+
+    .form-container {
+        width: 90%;
+        height: 80%;
+    }
+
+    .contact-form {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    form button {
+        color: #1843b9;
+        border: 1px solid #1843b9;
+    }
+
+    @keyframes fly-in-message {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(70%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .contact-title-container {
+        font-size: 0.9rem;
+    }
 }

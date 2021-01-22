@@ -29,6 +29,7 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    box-shadow: 10px 7px 7.5px rgba(0, 0, 0, 0.295);
 }
 
 .flip-card-front {
@@ -49,4 +50,24 @@
 
 .flip-card:hover .flip-card-contents {
     transform: rotateX(180deg);
+}
+
+@media only screen and (max-width: 767px) {
+    .flip-card-contents {
+        display: flex;
+        flex-direction: row;
+    }
+    .flip-card-front,
+    .flip-card-back {
+        position: relative;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+    }
+
+    .flip-card-back {
+        transform: none;
+    }
+    .flip-card:hover .flip-card-contents {
+        transform: none;
+    }
 }
