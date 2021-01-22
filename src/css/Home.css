@@ -149,7 +149,7 @@
     }
 
     .my-logo {
-        height: 50%;
+        height: 40%;
     }
 }
 
@@ -173,6 +173,9 @@
         width: 100vw;
         height: 60%;
     }
+    .my-logo {
+        height: 60%;
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -187,9 +190,12 @@
     }
 }
 
-@media only screen and (max-width: 281px) {
+@media only screen and (max-width: 300px) {
     .home-title {
         font-size: 0.8rem;
         margin-top: 5%;
+    }
+    .my-logo {
+        height: 50%;
     }
 }
