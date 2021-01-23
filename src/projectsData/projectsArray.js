@@ -10,7 +10,7 @@ const projs = [
         name: 'Weather App',
         skills: ['React', 'CSS', 'Responsive'],
         img: weatherAppImg,
-        link: 'https://weather-app-chi-bice.vercel.app/',
+        link: 'https://weather-app.wickettc.vercel.app/',
     },
     {
         name: 'E-Commerce Website',
@@ -28,7 +28,7 @@ const projs = [
         name: 'Memory Game',
         skills: ['React', 'CSS'],
         img: memoryGameImg,
-        link: 'https://memory-game-id765k9oa.vercel.app/',
+        link: 'https://memory-game.wickettc.vercel.app/',
     },
     {
         name: 'Etch-A-Sketch',
