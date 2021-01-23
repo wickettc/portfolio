@@ -131,6 +131,9 @@
     .home-title {
         font-size: 1.7rem;
     }
+    .my-logo {
+        height: 55%;
+    }
 }
 
 @media only screen and (min-width: 951px) and (max-width: 1023px) {
@@ -139,7 +142,7 @@
     }
 
     .my-logo {
-        height: 58%;
+        height: 49%;
     }
 }
 

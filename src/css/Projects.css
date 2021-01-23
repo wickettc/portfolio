@@ -120,6 +120,20 @@
     .flip-card-img {
         width: 100%;
     }
+
+    .proj-skill:hover {
+        transform: none;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .proj-button-link:hover {
+        font-size: 1.2rem;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+    }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 767px) {
