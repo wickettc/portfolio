@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import '../css/Contact.css';
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import "../css/Contact.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-    const [fromName, setFromName] = useState('');
-    const [returnEmail, setReturnEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [fromName, setFromName] = useState("");
+    const [returnEmail, setReturnEmail] = useState("");
+    const [message, setMessage] = useState("");
     const [sending, setSending] = useState(false);
 
     function sendFormEmail(e) {
@@ -13,24 +13,24 @@ const Contact = () => {
         setSending(true);
         emailjs
             .sendForm(
-                'service_hjmr08k',
-                'template_k17x5jj',
+                "service_hjmr08k",
+                "template_k17x5jj",
                 e.target,
-                'user_I68M45adhXsv5RWm6YpAO'
+                "user_I68M45adhXsv5RWm6YpAO"
             )
             .then(
                 (result) => {
-                    alert('Thanks! I will get back to you ASAP!');
-                    setFromName('');
-                    setReturnEmail('');
-                    setMessage('');
+                    alert("Thanks! I will get back to you ASAP!");
+                    setFromName("");
+                    setReturnEmail("");
+                    setMessage("");
                     setSending(false);
                 },
                 (error) => {
                     console.log(error);
-                    setFromName('');
-                    setReturnEmail('');
-                    setMessage('That did not work... Please try again later!');
+                    setFromName("");
+                    setReturnEmail("");
+                    setMessage("That did not work... Please try again later!");
                     setSending(false);
                 }
             );
@@ -40,12 +40,12 @@ const Contact = () => {
         <div className="contact-container">
             <div className="contact-title-container">
                 <h1 className="contact-title-header-1">
-                    Want to get in{' '}
+                    Want to get in{" "}
                     <span className="contact-title-colored">Contact</span>?
                 </h1>
                 <h2 className="contact-title-header-2">
                     Send <span className="contact-title-colored">me</span> a
-                    Message{' '}
+                    Message{" "}
                     <span className="contact-arrow-right">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const Contact = () => {
             <div className="form-container">
                 <form className="contact-form" onSubmit={sendFormEmail}>
                     <label htmlFor="from_name">
-                        {' '}
+                        {" "}
                         Name:
                         <input
                             placeholder="What is your name?"
@@ -96,7 +96,7 @@ const Contact = () => {
                         />
                     </label>
                     <label htmlFor="message">
-                        Body:
+                        Message:
                         <textarea
                             placeholder="Give me some details"
                             id="message"
