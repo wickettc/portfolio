@@ -14,6 +14,11 @@ const FlipCard = (props) => {
                 </div>
                 <div className="flip-card-back">
                     <h4 className="flip-card-title">{props.name}</h4>
+                    {props.prof ? (
+                        <h6 className="flip-card-subtitle">{props.prof}</h6>
+                    ) : (
+                        ''
+                    )}
                     {props.back}
                 </div>
             </div>

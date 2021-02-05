@@ -1,3 +1,5 @@
+import westlandBowlImg from '../imgs/westlandBowlImg.JPG';
+import membersOnlyImg from '../imgs/membersOnlyImg.JPG';
 import weatherAppImg from '../imgs/weatherAppImg.JPG';
 import memoryGameImg from '../imgs/memoryGameImg.JPG';
 import etchASketchImg from '../imgs/etchASketchImg.JPG';
@@ -6,6 +8,19 @@ import covidTrackerImg from '../imgs/covidTrackerImg.JPG';
 import shoppingCartImg from '../imgs/shoppingCartImg.JPG';
 
 const projs = [
+    {
+        name: 'Westland Bowl',
+        prof: 'Professional Project',
+        skills: ['VanillaJS', 'PHP', 'Bootstrap', 'Responsive'],
+        img: westlandBowlImg,
+        link: 'http://westlandbowl.com/',
+    },
+    {
+        name: 'Members Only',
+        skills: ['NodeJS', 'MongoDB', 'Express'],
+        img: membersOnlyImg,
+        link: 'http://stormy-sands-24197.herokuapp.com/',
+    },
     {
         name: 'Weather App',
         skills: ['React', 'CSS', 'Responsive'],

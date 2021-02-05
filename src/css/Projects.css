@@ -166,4 +166,8 @@
     .projects-header-container {
         font-size: 1.8rem;
     }
+
+    .proj-skills-list {
+        margin-bottom: 5px;
+    }
 }

@@ -27,6 +27,7 @@ const Projects = () => {
             <FlipCard
                 key={index}
                 name={proj.name}
+                prof={proj.prof}
                 img={proj.img}
                 back={skills}
             />
