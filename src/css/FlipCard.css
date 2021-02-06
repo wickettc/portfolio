@@ -68,6 +68,10 @@
         position: relative;
         -webkit-backface-visibility: visible;
         backface-visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .flip-card-back {
