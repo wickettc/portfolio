@@ -43,6 +43,13 @@
     color: black;
 }
 
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .flip-card-img {
     height: 100%;
     width: 100%;
