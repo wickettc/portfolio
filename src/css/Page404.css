@@ -1,0 +1,52 @@
+.page404-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1843b9;
+    height: 100vh;
+}
+
+.page404-header {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.page404-header-contents {
+    text-align: center;
+}
+
+.page404-header-contents h1 {
+    margin-bottom: 11px;
+}
+
+.page404-header-contents h3 {
+    font-style: italic;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.page404-header-contents p {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.page404-header-contents a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5%;
+    transition: all 0.4s ease;
+}
+
+.page404-header-contents a:hover {
+    background: white;
+    color: #1843b9;
+}
