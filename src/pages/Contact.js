@@ -1,36 +1,43 @@
-import React, { useState } from "react";
-import "../css/Contact.css";
-import emailjs from "emailjs-com";
+import React, { useState } from 'react';
+import Popup from '../components/Popup';
+import '../css/Contact.css';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const [fromName, setFromName] = useState("");
-    const [returnEmail, setReturnEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const [fromName, setFromName] = useState('');
+    const [returnEmail, setReturnEmail] = useState('');
+    const [message, setMessage] = useState('');
     const [sending, setSending] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupMessage, setPopupMessage] = useState('');
 
     function sendFormEmail(e) {
         e.preventDefault();
         setSending(true);
         emailjs
             .sendForm(
-                "service_hjmr08k",
-                "template_k17x5jj",
+                'service_hjmr08k',
+                'template_k17x5jj',
                 e.target,
-                "user_I68M45adhXsv5RWm6YpAO"
+                'user_I68M45adhXsv5RWm6YpAO'
             )
             .then(
                 (result) => {
-                    alert("Thanks! I will get back to you ASAP!");
-                    setFromName("");
-                    setReturnEmail("");
-                    setMessage("");
+                    setPopupMessage('Thanks! I will get back to you ASAP!');
+                    setShowPopup(true);
+                    setFromName('');
+                    setReturnEmail('');
+                    setMessage('');
                     setSending(false);
                 },
                 (error) => {
-                    console.log(error);
-                    setFromName("");
-                    setReturnEmail("");
-                    setMessage("That did not work... Please try again later!");
+                    setPopupMessage(
+                        `Oops, something went wrong. Send me an email at wickettc@gmail.com instead please!`
+                    );
+                    setShowPopup(true);
+                    setFromName('');
+                    setReturnEmail('');
+                    setMessage('');
                     setSending(false);
                 }
             );
@@ -38,14 +45,17 @@ const Contact = () => {
 
     return (
         <div className="contact-container">
+            {showPopup ? (
+                <Popup message={popupMessage} setShowPopup={setShowPopup} />
+            ) : null}
             <div className="contact-title-container">
                 <h1 className="contact-title-header-1">
-                    Want to get in{" "}
+                    Want to get in{' '}
                     <span className="contact-title-colored">Contact</span>?
                 </h1>
                 <h2 className="contact-title-header-2">
                     Send <span className="contact-title-colored">me</span> a
-                    Message{" "}
+                    Message{' '}
                     <span className="contact-arrow-right">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +81,7 @@ const Contact = () => {
             <div className="form-container">
                 <form className="contact-form" onSubmit={sendFormEmail}>
                     <label htmlFor="from_name">
-                        {" "}
+                        {' '}
                         Name:
                         <input
                             placeholder="What is your name?"
