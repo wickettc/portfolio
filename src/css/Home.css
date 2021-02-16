@@ -40,7 +40,7 @@
 }
 
 .my-name {
-    color: rgb(56, 56, 56);
+    color: rgb(108, 87, 201);
     font-weight: 700;
     text-decoration: underline;
 }
@@ -51,23 +51,28 @@
 
 .home-first {
     margin-bottom: 10px;
-    /* padding-left: 5%; */
     font-weight: 400;
     animation: fly-left 2s ease-in-out;
 }
 
 .home-second {
     margin: 0;
-    /* padding-left: 5%; */
     font-weight: 400;
     animation: fade-in 3s ease-in-out;
 }
 
 .home-third {
     margin-top: 10px;
-    /* padding-left: 5%; */
     font-weight: 400;
     animation: fly-right 2s ease-in-out;
+}
+
+.home-about-container {
+    text-align: center;
+}
+
+.home-about-container h2 {
+    font-size: 2.5rem;
 }
 
 @keyframes fly-left {

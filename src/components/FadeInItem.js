@@ -17,7 +17,9 @@ const FadeInItem = (props) => {
     return (
         <div
             style={{ margin: '100px' }}
-            className={`fade-in-item ${isVisible ? 'is-visible' : ''}`}
+            className={`fade-in-item ${isVisible ? 'is-visible' : ''} ${
+                props.divClass
+            }`}
             ref={itemRef}
         >
             {props.children}
