@@ -1,6 +1,7 @@
 .home-container {
     display: flex;
-    background: linear-gradient(90deg, white 75%, #1843b9 25%);
+    /* background: linear-gradient(90deg, white 75%, #1843b9 25%); */
+    background-color: #1a1530;
     animation: 3s load-in-home ease;
 }
 
@@ -20,7 +21,7 @@
     width: 50%;
     justify-content: center;
     align-items: flex-start;
-    color: black;
+    color: white;
     font-size: 2.2rem;
     padding-left: 3%;
 }
@@ -39,7 +40,7 @@
 }
 
 .my-name {
-    color: #1843b9;
+    color: rgb(56, 56, 56);
     font-weight: 700;
     text-decoration: underline;
 }

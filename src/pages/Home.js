@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Home.css';
 import cwLogo from '../imgs/cw-logo.png';
+import chaseDevLogo from '../imgs/chase_dev_logo.png';
 
 const Home = () => {
     return (
@@ -22,7 +23,8 @@ const Home = () => {
             <div className="home-logo-container">
                 <img
                     className="my-logo"
-                    src={cwLogo}
+                    width="80%"
+                    src={chaseDevLogo}
                     alt="Chase Wickett WebDev Logo"
                 />
             </div>
