@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "../css/NavBar.css";
+import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import '../css/NavBar.css';
 
 const NavBar = () => {
     const [openNavBar, setOpenNavBar] = useState(false);
@@ -21,9 +21,9 @@ const NavBar = () => {
             }
         };
 
-        document.addEventListener("click", handleClick);
+        document.addEventListener('click', handleClick);
         return () => {
-            document.removeEventListener("click", handleClick);
+            document.removeEventListener('click', handleClick);
         };
     }, [openNavBar, hideNav]);
 
@@ -35,48 +35,40 @@ const NavBar = () => {
                     setOpenNavBar(!openNavBar);
                     openNavBar ? setHideNav(true) : setHideNav(false);
                 }}
-                className={`nav-hamburger ${openNavBar ? "change" : ""}`}
+                className={`nav-hamburger ${openNavBar ? 'change' : ''}`}
             >
                 <div className="top-bar"></div>
                 <div className="middle-bar"></div>
                 <div className="bottom-bar"></div>
             </div>
-            <nav ref={navBar} className="nav-bar hide-nav-bar">
-                <ul className={`${hideNav ? "hide" : ""}`}>
-                    <li>
-                        <Link
-                            onClick={() => {
-                                setOpenNavBar(false);
-                                setHideNav(true);
-                            }}
-                            to="/"
-                        >
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={() => {
-                                setOpenNavBar(false);
-                                setHideNav(true);
-                            }}
-                            to="/projects"
-                        >
-                            Projects
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={() => {
-                                setOpenNavBar(false);
-                                setHideNav(true);
-                            }}
-                            to="/contact"
-                        >
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
+            <nav ref={navBar} className={`nav-bar ${hideNav ? 'hide' : ''}`}>
+                <Link
+                    onClick={() => {
+                        setOpenNavBar(false);
+                        setHideNav(true);
+                    }}
+                    to="/"
+                >
+                    Home
+                </Link>
+                <Link
+                    onClick={() => {
+                        setOpenNavBar(false);
+                        setHideNav(true);
+                    }}
+                    to="/projects"
+                >
+                    Projects
+                </Link>
+                <Link
+                    onClick={() => {
+                        setOpenNavBar(false);
+                        setHideNav(true);
+                    }}
+                    to="/contact"
+                >
+                    Contact
+                </Link>
             </nav>
         </div>
     );
