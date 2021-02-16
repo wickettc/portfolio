@@ -1,7 +1,7 @@
 .home-container {
     display: flex;
     /* background: linear-gradient(90deg, white 75%, #1843b9 25%); */
-    background-color: #1a1530;
+    background: url(../imgs/home.jpg);
     animation: 3s load-in-home ease;
 }
 
