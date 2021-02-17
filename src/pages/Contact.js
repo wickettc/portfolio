@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Popup from '../components/Popup';
 import '../css/Contact.css';
-import Footer from '../components/Footer';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
