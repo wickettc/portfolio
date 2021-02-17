@@ -8,11 +8,11 @@
 }
 
 .linkbar-container svg {
-    fill: rgba(10, 9, 9, 0.514);
+    fill: rgba(177, 177, 177, 0.514);
     margin-bottom: 5px;
     cursor: pointer;
 }
 
 .linkbar-container svg:hover {
-    fill: rgba(0, 0, 0, 0.7);
+    fill: rgba(146, 68, 247, 0.753);
 }

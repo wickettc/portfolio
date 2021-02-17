@@ -24,6 +24,11 @@
     width: 90%;
 }
 
+.project-card-container {
+    width: 80%;
+    margin-bottom: 5%;
+}
+
 .projs-container .flip-card {
     width: 20%;
 }
@@ -36,6 +41,7 @@
 .proj-skills-list {
     list-style: none;
     padding: 0;
+    width: 80%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -45,11 +51,12 @@
 
 .proj-skill {
     border: 1px solid white;
-    width: 80%;
+    width: 100%;
     margin: 2px;
     cursor: default;
     color: white;
     transition: all 0.4s ease-in-out;
+    padding: 2%;
 }
 
 .proj-skill:hover {

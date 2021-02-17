@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
@@ -15,20 +16,22 @@ function App() {
             <div>
                 <NavBar />
                 <LinkBar />
-                <Switch>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
-                    <Route path="/projects">
-                        <Projects />
-                    </Route>
-                    <Route path="/contact">
-                        <Contact />
-                    </Route>
-                    <Route>
-                        <Page404 />
-                    </Route>
-                </Switch>
+                <ScrollToTop>
+                    <Switch>
+                        <Route exact path="/">
+                            <Home />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects />
+                        </Route>
+                        <Route path="/contact">
+                            <Contact />
+                        </Route>
+                        <Route>
+                            <Page404 />
+                        </Route>
+                    </Switch>
+                </ScrollToTop>
                 <Footer />
             </div>
         </Router>

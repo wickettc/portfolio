@@ -1,36 +1,31 @@
 import React from 'react';
-import FlipCard from '../components/FlipCard';
+import FadeInItem from '../components/FadeInItem';
+import ProjectCard from '../components/ProjectCard';
 import projs from '../projectsData/projectsArray';
 import '../css/Projects.css';
 
 const Projects = () => {
     const renderProjs = projs.map((proj, index) => {
         const skills = (
-            <div>
-                <ul className="proj-skills-list">
-                    {proj.skills.map((skill, index) => (
-                        <li className="proj-skill" key={index}>
-                            {skill}
-                        </li>
-                    ))}
-                </ul>
-                <a
-                    className="proj-button-link"
-                    href={proj.link}
-                    target="__blank"
-                >
-                    Check It Out!
-                </a>
-            </div>
+            <ul className="proj-skills-list">
+                {proj.skills.map((skill, index) => (
+                    <li className="proj-skill" key={index}>
+                        {skill}
+                    </li>
+                ))}
+            </ul>
         );
         return (
-            <FlipCard
-                key={index}
-                name={proj.name}
-                prof={proj.prof}
-                img={proj.img}
-                back={skills}
-            />
+            <FadeInItem key={index} divClass="project-card-container">
+                <ProjectCard
+                    name={proj.name}
+                    img={proj.img}
+                    prof={proj.prof}
+                    skills={skills}
+                    link={proj.link}
+                    github={proj.github}
+                />
+            </FadeInItem>
         );
     });
 
