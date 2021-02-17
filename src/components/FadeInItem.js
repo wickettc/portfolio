@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
+import '../css/FadeInItem.css';
 
 const FadeInItem = (props) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +17,7 @@ const FadeInItem = (props) => {
     }, [isVisible]);
     return (
         <div
-            className={`fade-in-item ${isVisible ? "is-visible" : ""} ${
+            className={`fade-in-item ${isVisible ? 'is-visible' : ''} ${
                 props.divClass
             }`}
             ref={itemRef}

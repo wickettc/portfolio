@@ -1,8 +1,8 @@
 .popup-container {
     z-index: 2000;
     position: absolute;
-    background-color: #1843b9;
-    border: 1.5px solid white;
+    background-color: black;
+    border: 1.5px solid rgb(146, 68, 247);
     border-radius: 10%;
     padding: 5%;
 }
@@ -12,6 +12,7 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
+    fill: white;
 }
 
 .popup-message {

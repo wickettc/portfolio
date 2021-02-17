@@ -1,6 +1,5 @@
 .home-container {
     display: flex;
-    /* background: linear-gradient(90deg, white 75%, #1843b9 25%); */
     background: url(../imgs/home.jpg);
     animation: 3s load-in-home ease;
 }
@@ -40,7 +39,7 @@
 }
 
 .my-name {
-    color: rgb(108, 87, 201);
+    color: rgb(146, 68, 247);
     font-weight: 700;
     font-style: italic;
     text-decoration: underline;
@@ -73,20 +72,7 @@
     text-align: center;
 }
 
-.home-page-continued h2 {
-    font-size: 2.5rem;
-}
-
-.home-about-container {
-    text-align: center;
-    padding: 5% 15%;
-}
-
-.home-about-container div {
-    padding-bottom: 5%;
-}
-
-.home-about-container a {
+.home-page-continued a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
@@ -98,9 +84,57 @@
     transition: all 0.4s ease;
 }
 
-.home-about-container a:hover {
+.home-page-continued a:hover {
     background: white;
-    color: #1843b9;
+    color: rgb(146, 68, 247);
+}
+
+.home-page-continued hr {
+    width: 75%;
+}
+
+.home-page-continued h2 {
+    font-size: 2.5rem;
+}
+
+.home-about-container {
+    text-align: center;
+    padding: 5% 15%;
+}
+
+.home-about-container div {
+    padding-bottom: 5%;
+    font-style: italic;
+}
+
+.home-featured-project {
+    height: 70vh;
+    padding: 4% 15%;
+    margin-bottom: 5%;
+}
+
+.home-featured-project h4,
+.home-featured-project p {
+    font-style: italic;
+}
+
+.home-featured-imgs {
+    position: relative;
+    height: 60%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+.featured-laptop-img {
+    position: absolute;
+    height: 100%;
+    transform: translateX(-60%);
+}
+
+.featured-phone-img {
+    position: absolute;
+    height: 85%;
+    transform: translate(75%, 25%) skew(0, -10deg);
 }
 
 @keyframes fly-left {
@@ -159,14 +193,28 @@
     .home-title {
         font-size: 2rem;
     }
+
+    .home-featured-project {
+        height: 70vh;
+        padding: 4% 20%;
+    }
+
+    .home-featured-imgs {
+        height: 55%;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
     .home-title {
         font-size: 1.7rem;
     }
+
     .my-logo {
         height: 55%;
+    }
+
+    .home-featured-imgs {
+        height: 50%;
     }
 }
 
@@ -178,6 +226,11 @@
     .my-logo {
         height: 49%;
     }
+
+    .home-featured-imgs {
+        height: 49%;
+        margin-bottom: 5%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 950px) {
@@ -188,17 +241,23 @@
     .my-logo {
         height: 40%;
     }
+
+    .home-featured-imgs {
+        height: 48%;
+        margin-bottom: 6%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .home-container {
         flex-direction: column;
-        background: linear-gradient(180deg, white 5%, #1843b9 95%);
+        justify-content: center;
         height: 100vh;
+        background-size: cover;
     }
 
     .home-title {
-        height: auto;
+        height: 100vh;
         width: 100vw;
         padding: 0;
         text-align: center;
@@ -206,12 +265,25 @@
         align-items: center;
     }
 
-    .home-logo-container {
+    /* .home-logo-container {
         width: 100vw;
         height: 60%;
     }
     .my-logo {
         height: 60%;
+    } */
+
+    .home-featured-project {
+        height: 80vh;
+    }
+
+    .home-about-container div {
+        padding-bottom: 7%;
+    }
+
+    .home-featured-imgs {
+        height: 40%;
+        margin-bottom: 7%;
     }
 }
 
@@ -219,11 +291,57 @@
     .home-title {
         font-size: 1.2rem;
     }
+
+    .home-about-container div {
+        padding-bottom: 10%;
+    }
+
+    .home-featured-imgs {
+        height: 49%;
+    }
+
+    .home-featured-imgs {
+        height: 35%;
+        margin-bottom: 7%;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .home-page-continued h2 {
+        font-size: 2.1rem;
+    }
+
+    .home-about-container div {
+        padding-bottom: 15%;
+    }
+
+    .home-featured-imgs {
+        height: 30%;
+        margin-bottom: 7%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
     .home-title {
         font-size: 1rem;
+    }
+
+    .home-page-continued h2 {
+        font-size: 2rem;
+    }
+
+    .home-featured-imgs {
+        height: 25%;
+        margin-bottom: 15%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .home-featured-project {
+        height: 100vh;
+    }
+    .home-featured-imgs {
+        height: 22%;
     }
 }
 
@@ -234,5 +352,9 @@
     }
     .my-logo {
         height: 50%;
+    }
+
+    .home-featured-imgs {
+        height: 20%;
     }
 }

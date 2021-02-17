@@ -27,13 +27,12 @@
 .nav-bar a {
     text-decoration: none;
     color: white;
-    font-size: 3.5rem;
+    font-size: 4rem;
     transition: 0.5s ease;
 }
 
 .nav-bar a:hover {
-    color: #1843b9;
-    -webkit-text-stroke: 0.05px white;
+    color: rgb(146, 68, 247);
 }
 
 .nav-hamburger {
@@ -84,3 +83,9 @@
         color: white;
     }
 } */
+
+@media only screen and (max-width: 767px) {
+    .nav-bar a {
+        color: black;
+    }
+}

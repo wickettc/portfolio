@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Page404 from './pages/Page404';
 import NavBar from './components/NavBar';
 import LinkBar from './components/LinkBar';
+import Footer from './components/Footer';
 import './css/App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                         <Page404 />
                     </Route>
                 </Switch>
+                <Footer />
             </div>
         </Router>
     );
