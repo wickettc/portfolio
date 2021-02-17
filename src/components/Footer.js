@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <div>
             <footer>
-                <div>Handcrafted with &#x2665; </div>
                 <div>
+                    Handcrafted by{' '}
                     <a href="https://github.com/wickettc">Chase Wickett</a> ©
                     2021
                 </div>

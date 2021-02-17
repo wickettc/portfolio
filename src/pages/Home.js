@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Home.css';
+import resume from '../documents/resume.pdf';
 import FadeInItem from '../components/FadeInItem';
-import westlandBowlLaptopImg from '../imgs/westlandbowl-laptop.PNG';
-import westlandBowlPhoneImg from '../imgs/westlandbowl-phone.PNG';
+import westlandBowlPhoneLaptopImg from '../imgs/westlandbowl-phone-laptop.PNG';
 
 const Home = () => {
     return (
@@ -61,26 +61,47 @@ const Home = () => {
                         scrolling task. Working with the owners, I was able to
                         create a modern and repsonsive design that their patrons
                         love! The owners also wanted to ability to update their
-                        events, specials and also, post the league scores
-                        through the site, so I implemented a backend with PHP to
-                        allow that functionality.
+                        events, specials and to post the league scores through
+                        the site. I ended up implementing a backend with PHP
+                        that allowed this functionality and more importantly,
+                        was easy for the owners to use.
                     </p>
-                    <div className="home-featured-imgs">
-                        <img
-                            className="featured-laptop-img"
-                            src={westlandBowlLaptopImg}
-                            alt="Laptop screen shot of westlandbowl.com"
-                        />
-                        <img
-                            className="featured-phone-img"
-                            src={westlandBowlPhoneImg}
-                            alt="Phone screen shot of westlandbowl.com"
-                        />
-                    </div>
+                    <img
+                        src={westlandBowlPhoneLaptopImg}
+                        alt="Screen shot of westlandbowl.com"
+                        className="featured-photo"
+                    />
                     <a href="https://westlandbowl.com" target="__blank">
                         Check it Out!
                     </a>
                 </FadeInItem>
+                <hr />
+                <FadeInItem divClass="home-resume-and-links">
+                    <h2>Check out my other projects!</h2>
+                    <Link to="/projects">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M14 18l10-7.088-10-6.912v3.042s-11.618 2.583-14 12.958c5.072-5.431 14-5.218 14-5.218v3.218z" />
+                        </svg>
+                    </Link>
+                    <h2>OR</h2>
+                    <h2>My Resume</h2>
+                    <a href={resume} target="__blank">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path d="M14 18l10-7.088-10-6.912v3.042s-11.618 2.583-14 12.958c5.072-5.431 14-5.218 14-5.218v3.218z" />
+                        </svg>
+                    </a>
+                </FadeInItem>
+                <hr />
             </div>
         </div>
     );

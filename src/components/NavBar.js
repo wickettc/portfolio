@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import resume from '../documents/resume.pdf';
 import '../css/NavBar.css';
 
 const NavBar = () => {
@@ -69,6 +70,16 @@ const NavBar = () => {
                 >
                     Contact
                 </Link>
+                <a
+                    href={resume}
+                    target="__blank"
+                    onClick={() => {
+                        setOpenNavBar(false);
+                        setHideNav(true);
+                    }}
+                >
+                    Resume
+                </a>
             </nav>
         </div>
     );

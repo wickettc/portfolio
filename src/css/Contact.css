@@ -21,7 +21,7 @@ div.contact-loader {
     height: 25px;
     width: 25px;
     border: 5px solid rgba(255, 255, 255, 0.6);
-    border-top-color: black;
+    border-top-color: rgb(146, 68, 247);
 }
 
 div.disappear {
@@ -78,7 +78,7 @@ div.disappear {
 }
 
 .contact-title-colored {
-    color: black;
+    color: rgb(146, 68, 247);
 }
 
 .form-container {
@@ -130,11 +130,11 @@ input:placeholder {
 }
 
 input:focus {
-    outline: 1.5px solid rgba(49, 49, 49, 0.863);
+    outline: 1.5px solid rgb(146, 68, 247);
 }
 
 textarea:focus {
-    outline: 1.5px solid rgba(49, 49, 49, 0.863);
+    outline: 1.5px solid rgb(146, 68, 247);
 }
 
 form button {
@@ -149,7 +149,7 @@ form button {
 }
 
 form button:hover {
-    color: black;
+    color: rgb(146, 68, 247);
     background-color: white;
 }
 
@@ -206,7 +206,7 @@ form button:hover {
 
     form button {
         color: black;
-        border: 1px solid black;
+        border: 1px solid rgb(146, 68, 247);
     }
 
     @keyframes fly-in-message {

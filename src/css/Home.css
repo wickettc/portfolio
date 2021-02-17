@@ -26,7 +26,7 @@
 }
 
 .home-title h1 {
-    background-color: rgba(170, 169, 169, 0.548);
+    background-color: rgba(170, 169, 169, 0.719);
     padding: 3%;
     border-radius: 10%;
 }
@@ -37,11 +37,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.my-logo {
-    animation: fade-down 2s ease-in-out;
-    height: 62%;
 }
 
 .my-name {
@@ -115,9 +110,8 @@
 }
 
 .home-featured-project {
-    height: 70vh;
-    padding: 4% 15%;
-    margin-bottom: 5%;
+    text-align: center;
+    padding: 5% 15%;
 }
 
 .home-featured-project h3,
@@ -127,25 +121,23 @@
 
 .home-featured-project p {
     line-height: 1.6;
+    padding-bottom: 2%;
 }
 
-.home-featured-imgs {
-    position: relative;
-    height: 60%;
-    margin-bottom: 3%;
-    margin-top: 1%;
+.featured-photo {
+    width: 100%;
 }
 
-.featured-laptop-img {
-    position: absolute;
-    height: 100%;
-    transform: translateX(-60%);
+.home-resume-and-links {
+    text-align: center;
+    padding: 5% 15%;
 }
 
-.featured-phone-img {
-    position: absolute;
-    height: 85%;
-    transform: translate(75%, 25%) skew(0, -10deg);
+.home-resume-and-links a {
+    fill: white;
+}
+.home-resume-and-links a:hover {
+    fill: black;
 }
 
 @keyframes fly-left {
@@ -185,39 +177,11 @@
     }
 }
 
-@keyframes fade-down {
-    0% {
-        opacity: 0;
-        transform: translateY(-200%);
-    }
-    80% {
-        transform: translateY(1%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-
 /* media query */
-
-@media only screen and (max-height: 825px) {
-    .home-featured-project {
-        height: 100vh;
-    }
-}
 
 @media only screen and (min-width: 1200px) and (max-width: 1290px) {
     .home-title {
         font-size: 2rem;
-    }
-
-    .home-featured-project {
-        height: 70vh;
-        padding: 4% 20%;
-    }
-
-    .home-featured-imgs {
-        height: 55%;
     }
 }
 
@@ -225,47 +189,17 @@
     .home-title {
         font-size: 1.7rem;
     }
-
-    .my-logo {
-        height: 55%;
-    }
-
-    .home-featured-imgs {
-        height: 50%;
-    }
 }
 
 @media only screen and (min-width: 951px) and (max-width: 1023px) {
     .home-title {
         font-size: 1.5rem;
     }
-
-    .my-logo {
-        height: 49%;
-    }
-
-    .home-featured-imgs {
-        height: 49%;
-        margin-bottom: 5%;
-    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 950px) {
     .home-title {
         font-size: 1.2rem;
-    }
-
-    .my-logo {
-        height: 40%;
-    }
-
-    .home-featured-project {
-        height: 90vh;
-    }
-
-    .home-featured-imgs {
-        height: 40%;
-        margin-bottom: 6%;
     }
 }
 
@@ -286,31 +220,13 @@
         align-items: center;
     }
 
-    /* .home-logo-container {
-        width: 100vw;
-        height: 60%;
-    } */
-
     .home-logo-container {
         width: 100vw;
         height: 0;
     }
 
-    /* .my-logo {
-        height: 60%;
-    } */
-
-    .home-featured-project {
-        height: 100vh;
-    }
-
     .home-about-container div {
         padding-bottom: 7%;
-    }
-
-    .home-featured-imgs {
-        height: 40%;
-        margin-bottom: 7%;
     }
 }
 
@@ -322,15 +238,6 @@
     .home-about-container div {
         padding-bottom: 10%;
     }
-
-    .home-featured-imgs {
-        height: 49%;
-    }
-
-    .home-featured-imgs {
-        height: 35%;
-        margin-bottom: 7%;
-    }
 }
 
 @media only screen and (max-width: 475px) {
@@ -340,11 +247,6 @@
 
     .home-about-container div {
         padding-bottom: 15%;
-    }
-
-    .home-featured-imgs {
-        height: 30%;
-        margin-bottom: 7%;
     }
 }
 
@@ -356,38 +258,11 @@
     .home-page-continued h2 {
         font-size: 2rem;
     }
-
-    .home-featured-imgs {
-        height: 25%;
-        margin-bottom: 15%;
-    }
-}
-
-@media only screen and (max-width: 376px) {
-    .home-featured-project {
-        height: 100vh;
-    }
-    .home-featured-imgs {
-        height: 22%;
-    }
 }
 
 @media only screen and (max-width: 300px) {
     .home-title {
         font-size: 0.8rem;
         margin-top: 5%;
-    }
-    .my-logo {
-        height: 50%;
-    }
-
-    .home-featured-imgs {
-        height: 20%;
-    }
-}
-
-@media only screen and (height: 568px) and (width: 320px) {
-    .home-featured-project {
-        padding-bottom: 80%;
     }
 }
