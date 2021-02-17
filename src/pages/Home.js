@@ -45,14 +45,15 @@ const Home = () => {
                         and I am a web devloper from Michigan! I love figuring
                         out complex problems and coming up with responsive and
                         creative solutions. I &#x2665; JavaScript, but I am
-                        comfortable learning other languages when nescessary.
+                        comfortable working with whatever language is the best
+                        tool for the job!
                     </div>
                     <Link to="/contact">Get in Contact</Link>
                 </FadeInItem>
                 <hr />
                 <FadeInItem divClass="home-featured-project">
                     <h2>Featured Project</h2>
-                    <h4>Westland Bowl</h4>
+                    <h3>Westland Bowl</h3>
                     <p>
                         Westland Bowl's website was a bit outdated and needed an
                         update! The original was not responsive and accessing
