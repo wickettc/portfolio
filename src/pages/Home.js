@@ -1,8 +1,9 @@
-import React from 'react';
-import '../css/Home.css';
-import FadeInItem from '../components/FadeInItem';
-import cwLogo from '../imgs/cw-logo.png';
-import chaseDevLogo from '../imgs/chase_dev_logo.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../css/Home.css";
+import FadeInItem from "../components/FadeInItem";
+import cwLogo from "../imgs/cw-logo.png";
+import chaseDevLogo from "../imgs/chase_dev_logo.png";
 
 const Home = () => {
     return (
@@ -30,50 +31,20 @@ const Home = () => {
                     />
                 </div>
             </div>
-            <div className="home-about-container">
-                <FadeInItem divClass="about-me">
+            <div className="home-page-continued">
+                <FadeInItem divClass="home-about-container">
                     <h2>About Me</h2>
                     <div>
-                        My name is{' '}
+                        My name is{" "}
                         <span className="my-name">Chase Wickett</span> and I am
                         a web devloper from Michigan! I love figuring out
                         complex problems and coming up with responsive and
-                        creative solutions. Check out some of my latest work
-                        here or send me a message here!
+                        creative solutions.
                     </div>
+                    <Link to="/contact">Get in Contact</Link>
                 </FadeInItem>
-                <FadeInItem>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Praesent fermentum sapien quis massa placerat, in
-                        dignissim mi scelerisque. Sed cursus tortor in volutpat
-                        euismod. Quisque laoreet molestie mauris. Aenean porta
-                        nisi ac pulvinar dignissim. Curabitur sed vulputate
-                        nisi, in porta mauris. Donec varius dui vitae vestibulum
-                    </div>
-                    <hr></hr>
-                </FadeInItem>
-                <FadeInItem>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Praesent fermentum sapien quis massa placerat, in
-                        dignissim mi scelerisque. Sed cursus tortor in volutpat
-                        euismod. Quisque laoreet molestie mauris. Aenean porta
-                        nisi ac pulvinar dignissim. Curabitur sed vulputate
-                        nisi, in porta mauris. Donec varius dui vitae vestibulum
-                    </div>
-                    <hr></hr>
-                </FadeInItem>
-                <FadeInItem>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Praesent fermentum sapien quis massa placerat, in
-                        dignissim mi scelerisque. Sed cursus tortor in volutpat
-                        euismod. Quisque laoreet molestie mauris. Aenean porta
-                        nisi ac pulvinar dignissim. Curabitur sed vulputate
-                        nisi, in porta mauris. Donec varius dui vitae vestibulum
-                    </div>
-                    <hr></hr>
+                <FadeInItem divClass="home-featured-project">
+                    <h2>Featured Project</h2>
                 </FadeInItem>
             </div>
         </div>

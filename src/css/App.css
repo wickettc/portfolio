@@ -1,14 +1,14 @@
 html {
     /* background: linear-gradient(90deg, white 50%, #1843b9 50%); */
     height: 100%;
-    background-color: #382e63;
+    background-color: #370e58;
 }
 
 body {
     margin: 0;
     padding: 0;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .fade-in-item {

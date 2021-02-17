@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 const FadeInItem = (props) => {
     const [isVisible, setIsVisible] = useState(false);
@@ -16,8 +16,7 @@ const FadeInItem = (props) => {
     }, [isVisible]);
     return (
         <div
-            style={{ margin: '100px' }}
-            className={`fade-in-item ${isVisible ? 'is-visible' : ''} ${
+            className={`fade-in-item ${isVisible ? "is-visible" : ""} ${
                 props.divClass
             }`}
             ref={itemRef}
