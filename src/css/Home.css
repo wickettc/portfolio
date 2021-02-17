@@ -248,6 +248,10 @@
     .home-about-container div {
         padding-bottom: 15%;
     }
+
+    .featured-photo {
+        margin-bottom: 3%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
