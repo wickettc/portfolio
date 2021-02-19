@@ -77,6 +77,10 @@ div.disappear {
     display: none;
 }
 
+.contact-arrow-right {
+    fill: rgb(146, 68, 247);
+}
+
 .contact-title-colored {
     color: rgb(146, 68, 247);
 }
@@ -112,17 +116,25 @@ label {
 }
 
 input {
-    border-radius: 2.5%;
     line-height: 2;
-    border: none;
     width: 100%;
     padding: 5px 10px;
 }
 
 textarea {
-    border-radius: 2.5%;
     width: 100%;
     padding: 5px 10px;
+    resize: none;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 1%;
 }
 
 input:placeholder {
@@ -131,10 +143,14 @@ input:placeholder {
 
 input:focus {
     outline: 1.5px solid rgb(146, 68, 247);
+    caret-color: white;
+    border: none;
 }
 
 textarea:focus {
     outline: 1.5px solid rgb(146, 68, 247);
+    caret-color: white;
+    border: none;
 }
 
 form button {
@@ -186,6 +202,7 @@ form button:hover {
     .contact-arrow-down {
         margin-top: 3%;
         display: block;
+        fill: rgb(146, 68, 247);
     }
 
     .contact-title-header-2 {

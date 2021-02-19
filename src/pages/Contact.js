@@ -80,44 +80,34 @@ const Contact = () => {
             </div>
             <div className="form-container">
                 <form className="contact-form" onSubmit={sendFormEmail}>
-                    <label htmlFor="from_name">
-                        {' '}
-                        Name:
-                        <input
-                            placeholder="What is your name?"
-                            id="from_name"
-                            name="from_name"
-                            type="text"
-                            value={fromName}
-                            required
-                            onChange={(e) => setFromName(e.target.value)}
-                        />
-                    </label>
-                    <label htmlFor="return_email">
-                        Email:
-                        <input
-                            placeholder="How can I reach you?"
-                            id="return_email"
-                            name="return_email"
-                            type="email"
-                            value={returnEmail}
-                            required
-                            onChange={(e) => setReturnEmail(e.target.value)}
-                        />
-                    </label>
-                    <label htmlFor="message">
-                        Message:
-                        <textarea
-                            placeholder="Give me some details"
-                            id="message"
-                            name="message"
-                            value={message}
-                            rows="15"
-                            cols="40"
-                            required
-                            onChange={(e) => setMessage(e.target.value)}
-                        />
-                    </label>
+                    <input
+                        placeholder="What is your name?"
+                        id="from_name"
+                        name="from_name"
+                        type="text"
+                        value={fromName}
+                        required
+                        onChange={(e) => setFromName(e.target.value)}
+                    />
+                    <input
+                        placeholder="What is your email?"
+                        id="return_email"
+                        name="return_email"
+                        type="email"
+                        value={returnEmail}
+                        required
+                        onChange={(e) => setReturnEmail(e.target.value)}
+                    />
+                    <textarea
+                        placeholder="How can I help you!?"
+                        id="message"
+                        name="message"
+                        value={message}
+                        rows="15"
+                        cols="40"
+                        required
+                        onChange={(e) => setMessage(e.target.value)}
+                    />
                     {sending ? (
                         <div className="loader contact-loader"></div>
                     ) : (
