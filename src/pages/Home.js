@@ -51,7 +51,7 @@ const Home = () => {
                     <Link to="/contact">Get in Contact</Link>
                 </FadeInItem>
                 <hr />
-                <FadeInItem divClass="home-featured-project">
+                <FadeInItem divClass="home-featured-project home-featured-project-first">
                     <h2>Featured Project</h2>
                     <h3>Westland Bowl</h3>
                     <p>
@@ -66,6 +66,9 @@ const Home = () => {
                         that allowed this functionality and more importantly,
                         was easy for the owners to use.
                     </p>
+                </FadeInItem>
+
+                <FadeInItem divClass="home-featured-project home-featured-project-second">
                     <img
                         src={westlandBowlPhoneLaptopImg}
                         alt="Screen shot of westlandbowl.com"

@@ -114,6 +114,14 @@
     padding: 5% 15%;
 }
 
+.home-featured-project-first {
+    padding-bottom: 0;
+}
+
+.home-featured-project-second {
+    padding-top: 0;
+}
+
 .home-featured-project h3,
 .home-featured-project p {
     font-style: italic;
