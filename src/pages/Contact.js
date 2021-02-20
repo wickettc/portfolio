@@ -103,7 +103,7 @@ const Contact = () => {
                         id="message"
                         name="message"
                         value={message}
-                        rows="15"
+                        rows="10"
                         cols="40"
                         required
                         onChange={(e) => setMessage(e.target.value)}

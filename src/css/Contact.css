@@ -135,6 +135,8 @@ textarea {
     border-right: none;
     border-bottom: 1px solid white;
     margin-bottom: 1%;
+    font-size: 1.2rem;
+    color: white;
 }
 
 input:placeholder {
@@ -155,13 +157,14 @@ textarea:focus {
 
 form button {
     padding: 2px 10px 2px 10px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: white;
     background-color: transparent;
     width: 40%;
     border: 1px solid white;
     border-radius: 5%;
     cursor: pointer;
+    margin-top: 3%;
 }
 
 form button:hover {
