@@ -1,6 +1,10 @@
 .home-container {
     display: flex;
     background: url(../imgs/home.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     animation: 3s load-in-home ease;
 }
 
