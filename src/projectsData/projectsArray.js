@@ -6,6 +6,7 @@ import etchASketchImg from '../imgs/etchASketchImg.JPG';
 import calculatorImg from '../imgs/calculatorImg.JPG';
 import covidTrackerImg from '../imgs/covidTrackerImg.JPG';
 import shoppingCartImg from '../imgs/shoppingCartImg.JPG';
+import blogImg from '../imgs/blogImg.PNG';
 
 const projs = [
     {
@@ -14,6 +15,13 @@ const projs = [
         skills: ['VanillaJS', 'PHP', 'Bootstrap', 'Responsive'],
         img: westlandBowlImg,
         link: 'http://westlandbowl.com/',
+    },
+    {
+        name: 'Blog',
+        skills: ['React', 'Express', 'PassportJS', 'MongoDB'],
+        img: blogImg,
+        link: 'https://blog-frontend-wickettc.vercel.app/',
+        github: 'https://github.com/wickettc/blog-frontend',
     },
     {
         name: 'Members Only',
