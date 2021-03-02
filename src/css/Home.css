@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: flex-start;
     color: white;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     padding-left: 3%;
 }
 
@@ -218,13 +218,13 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 950px) {
+@media only screen and (min-width: 769px) and (max-width: 950px) {
     .home-title {
         font-size: 1.2rem;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .home-container {
         flex-direction: column;
         justify-content: center;
@@ -237,7 +237,7 @@
         width: 100vw;
         padding: 0;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         align-items: center;
     }
 
@@ -277,7 +277,7 @@
 
 @media only screen and (max-width: 420px) {
     .home-title {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .home-page-continued h2 {

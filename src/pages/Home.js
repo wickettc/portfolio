@@ -15,7 +15,7 @@ const Home = () => {
                             Hey there,
                         </span>
                         <span className="home-break home-second">
-                            I'm <span className="my-name">Chase</span>
+                            I'm <span className="my-name">Chase </span>
                         </span>
                         <span className="home-break home-third">
                             Web Developer

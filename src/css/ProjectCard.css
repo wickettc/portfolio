@@ -61,6 +61,12 @@
     background-color: white;
 }
 
+@media only screen and (min-width: 1200px) {
+    .project-card-title {
+        font-size: 3rem;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .project-right-container {
         font-size: 1.5rem;

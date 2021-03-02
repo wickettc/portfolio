@@ -50,6 +50,7 @@
 }
 
 .proj-skill {
+    font-size: 1.3rem;
     border: 1px solid white;
     width: 100%;
     margin: 2px;
@@ -60,7 +61,7 @@
 }
 
 .proj-skill:hover {
-    transform: scale(1.2) perspective(1px);
+    transform: scale(1.1) perspective(1px);
     border: 1px solid black;
     color: black;
     background-color: white;
