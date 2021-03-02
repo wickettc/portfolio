@@ -84,6 +84,8 @@ div.disappear {
 
 .contact-title-colored {
     color: rgb(146, 68, 247);
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .form-container {
