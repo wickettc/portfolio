@@ -7,6 +7,7 @@ import calculatorImg from '../imgs/calculatorImg.JPG';
 import covidTrackerImg from '../imgs/covidTrackerImg.JPG';
 import shoppingCartImg from '../imgs/shoppingCartImg.JPG';
 import blogImg from '../imgs/blogImg.PNG';
+import battleShipImg from '../imgs/battleshipImg.PNG';
 
 const projs = [
     {
@@ -18,42 +19,49 @@ const projs = [
     },
     {
         name: 'Blog',
-        skills: ['React', 'Express', 'PassportJS', 'MongoDB'],
+        skills: ['ReactJS', 'ExpressJS', 'PassportJS', 'MongoDB'],
         img: blogImg,
         link: 'https://blog-frontend-wickettc.vercel.app/',
         github: 'https://github.com/wickettc/blog-frontend',
     },
     {
+        name: 'Battleship',
+        skills: ['ReactJS', 'JestJS', 'Responsive'],
+        img: battleShipImg,
+        link: 'https://battleship-wickettc.vercel.app/',
+        github: 'https://github.com/wickettc/battleship',
+    },
+    {
         name: 'Members Only',
-        skills: ['NodeJS', 'MongoDB', 'Express'],
+        skills: ['NodeJS', 'MongoDB', 'ExpressJS'],
         img: membersOnlyImg,
         link: 'http://stormy-sands-24197.herokuapp.com/',
         github: 'https://github.com/wickettc/members-only',
     },
     {
         name: 'Weather App',
-        skills: ['React', 'CSS', 'Responsive'],
+        skills: ['ReactJS', 'CSS', 'Responsive'],
         img: weatherAppImg,
         link: 'https://weather-app.wickettc.vercel.app/',
         github: 'https://github.com/wickettc/Weather-App',
     },
     {
         name: 'E-Commerce',
-        skills: ['React', 'CSS'],
+        skills: ['ReactJS', 'CSS'],
         img: shoppingCartImg,
         link: 'https://shopping-cart-git-main.wickettc.vercel.app/',
         github: 'https://github.com/wickettc/E-Commerce',
     },
     {
         name: 'Covid-19 Tracker',
-        skills: ['React', 'CSS', 'Chart Visualization'],
+        skills: ['ReactJS', 'CSS', 'Chart Visualization'],
         img: covidTrackerImg,
         link: 'https://covid19-tracker-git-main.wickettc.vercel.app/',
         github: 'https://github.com/wickettc/covid19-tracker',
     },
     {
         name: 'Memory Game',
-        skills: ['React', 'CSS'],
+        skills: ['ReactJS', 'CSS'],
         img: memoryGameImg,
         link: 'https://memory-game.wickettc.vercel.app/',
         github: 'https://github.com/wickettc/Memory-Game',
