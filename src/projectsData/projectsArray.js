@@ -8,14 +8,23 @@ import covidTrackerImg from '../imgs/covidTrackerImg.JPG';
 import shoppingCartImg from '../imgs/shoppingCartImg.JPG';
 import blogImg from '../imgs/blogImg.PNG';
 import battleShipImg from '../imgs/battleshipImg.PNG';
+import chaseBookImg from '../imgs/chaseBookImg.PNG';
 
 const projs = [
     {
         name: 'Westland Bowl',
-        prof: 'Professional Project',
+        sub: 'Professional Project',
         skills: ['VanillaJS', 'PHP', 'Bootstrap', 'Responsive'],
         img: westlandBowlImg,
         link: 'http://westlandbowl.com/',
+    },
+    {
+        name: 'ChaseBook',
+        sub: 'A Facebook Clone',
+        skills: ['ReactJS', 'ExpressJS', 'MongoDB'],
+        img: chaseBookImg,
+        link: 'https://chasebook-wickettc.vercel.app/',
+        github: 'https://github.com/wickettc/chasebook-frontend',
     },
     {
         name: 'Blog',

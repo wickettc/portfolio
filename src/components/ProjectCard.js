@@ -10,8 +10,8 @@ const ProjectCard = (props) => {
             <div className="project-card-right">
                 <div className="project-right-container">
                     <h3 className="project-card-title">{props.name}</h3>
-                    {props.prof ? (
-                        <h6 className="project-card-subtitle">{props.prof}</h6>
+                    {props.sub ? (
+                        <h6 className="project-card-subtitle">{props.sub}</h6>
                     ) : (
                         ''
                     )}
