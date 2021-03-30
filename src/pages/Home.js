@@ -4,6 +4,7 @@ import '../css/Home.css';
 import resume from '../documents/resume.pdf';
 import FadeInItem from '../components/FadeInItem';
 import westlandBowlPhoneLaptopImg from '../imgs/westlandbowl-phone-laptop.PNG';
+import chasebookPhoneLaptopImg from '../imgs/chasebook-mobile-laptop.png';
 
 const Home = () => {
     return (
@@ -52,7 +53,35 @@ const Home = () => {
                 </FadeInItem>
                 <hr />
                 <FadeInItem divClass="home-featured-project home-featured-project-first">
-                    <h2>Featured Project</h2>
+                    <h2>Featured Projects</h2>
+                    <h3>ChaseBook</h3>
+                    <p>
+                        ChaseBook is a "Facebook clone" that I created to help
+                        solidify what I had learned about creating full-stack
+                        applications. I created the server with ExpressJS, the
+                        database with MongoDB and the front end with ReactJS.
+                        ChaseBook is secured using Json Web Tokens and utilizes
+                        PassportJS for easy authentication. This was a fun
+                        project to really tie together these technologies and
+                        show I have the skills to use them all to create a real
+                        world application.
+                    </p>
+                </FadeInItem>
+
+                <FadeInItem divClass="home-featured-project home-featured-project-second">
+                    <img
+                        src={chasebookPhoneLaptopImg}
+                        alt="Screen shot of chasebook"
+                        className="featured-photo"
+                    />
+                    <a
+                        href="https://chasebook-wickettc.vercel.app/"
+                        target="__blank"
+                    >
+                        Check it Out!
+                    </a>
+                </FadeInItem>
+                <FadeInItem divClass="home-featured-project home-featured-project-first">
                     <h3>Westland Bowl</h3>
                     <p>
                         Westland Bowl's website was a bit outdated and needed an

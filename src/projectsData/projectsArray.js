@@ -12,13 +12,6 @@ import chaseBookImg from '../imgs/chaseBookImg.PNG';
 
 const projs = [
     {
-        name: 'Westland Bowl',
-        sub: 'Professional Project',
-        skills: ['VanillaJS', 'PHP', 'Bootstrap', 'Responsive'],
-        img: westlandBowlImg,
-        link: 'http://westlandbowl.com/',
-    },
-    {
         name: 'ChaseBook',
         sub: 'A Facebook Clone',
         skills: ['ReactJS', 'ExpressJS', 'MongoDB'],
@@ -39,6 +32,13 @@ const projs = [
         img: battleShipImg,
         link: 'https://battleship-wickettc.vercel.app/',
         github: 'https://github.com/wickettc/battleship',
+    },
+    {
+        name: 'Westland Bowl',
+        sub: 'Professional Project',
+        skills: ['VanillaJS', 'PHP', 'Bootstrap', 'Responsive'],
+        img: westlandBowlImg,
+        link: 'http://westlandbowl.com/',
     },
     {
         name: 'Members Only',
