@@ -4,7 +4,6 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    /* filter: blur(1px); */
     background-size: cover;
     animation: 3s load-in-home ease;
 }
@@ -28,7 +27,7 @@
     color: white;
     font-size: 2.3rem;
     padding-left: 3%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2.6px);
 }
 
 .home-title h1 {
