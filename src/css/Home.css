@@ -4,6 +4,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    /* filter: blur(1px); */
     background-size: cover;
     animation: 3s load-in-home ease;
 }
@@ -21,26 +22,19 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: flex-start;
     color: white;
     font-size: 2.3rem;
     padding-left: 3%;
+    backdrop-filter: blur(3px);
 }
 
 .home-title h1 {
-    background-color: rgba(170, 169, 169, 0.719);
+    background-color: rgb(170, 169, 169);
     padding: 3%;
     border-radius: 10%;
-}
-
-.home-logo-container {
-    height: 100vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .my-name {
@@ -148,9 +142,14 @@
 
 .home-resume-and-links a {
     fill: white;
+    border: none;
+    font-size: 1.8rem;
+    transition: all 0.4s ease-in-out;
 }
 .home-resume-and-links a:hover {
     fill: black;
+    border: none;
+    border-radius: 0%;
 }
 
 @keyframes fly-left {

@@ -23,14 +23,6 @@ const Home = () => {
                         </span>
                     </h1>
                 </div>
-                <div className="home-logo-container">
-                    {/* <img
-                        className="my-logo"
-                        width="80%"
-                        src={chaseDevLogo}
-                        alt="Chase Wickett WebDev Logo"
-                    /> */}
-                </div>
             </div>
             <div className="home-page-continued">
                 <FadeInItem divClass="home-about-container">
@@ -109,28 +101,10 @@ const Home = () => {
                 </FadeInItem>
                 <hr />
                 <FadeInItem divClass="home-resume-and-links">
-                    <h2>Check out my other projects!</h2>
-                    <Link to="/projects">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                        >
-                            <path d="M14 18l10-7.088-10-6.912v3.042s-11.618 2.583-14 12.958c5.072-5.431 14-5.218 14-5.218v3.218z" />
-                        </svg>
-                    </Link>
+                    <Link to="/projects">Check out my other projects!</Link>
                     <h2>OR</h2>
-                    <h2>My Resume</h2>
                     <a href={resume} target="__blank">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                        >
-                            <path d="M14 18l10-7.088-10-6.912v3.042s-11.618 2.583-14 12.958c5.072-5.431 14-5.218 14-5.218v3.218z" />
-                        </svg>
+                        My Resume
                     </a>
                 </FadeInItem>
                 <hr />
