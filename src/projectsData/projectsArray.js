@@ -9,6 +9,7 @@ import shoppingCartImg from '../imgs/shoppingCartImg.JPG';
 import blogImg from '../imgs/blogImg.PNG';
 import battleShipImg from '../imgs/battleshipImg.PNG';
 import chaseBookImg from '../imgs/chaseBookImg.PNG';
+import plannerImg from '../imgs/plannerImg.PNG';
 
 const projs = [
     {
@@ -18,6 +19,13 @@ const projs = [
         img: chaseBookImg,
         link: 'https://chasebook-wickettc.vercel.app/',
         github: 'https://github.com/wickettc/chasebook-frontend',
+    },
+    {
+        name: 'Planner',
+        skills: ['VueJS', 'Responsive', 'CSS'],
+        img: plannerImg,
+        link: 'https://planner-wickettc.vercel.app/',
+        github: 'https://github.com/wickettc/planner',
     },
     {
         name: 'Blog',
