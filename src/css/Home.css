@@ -81,6 +81,7 @@
     border: 2px solid white;
     border-radius: 5%;
     transition: all 0.4s ease;
+    text-align: center;
 }
 
 .home-page-continued a:hover {
@@ -140,15 +141,15 @@
 }
 
 .home-resume-and-links a {
-    fill: white;
     border: none;
+    padding: 0;
     font-size: 1.8rem;
     transition: all 0.4s ease-in-out;
+    text-align: center;
 }
+
 .home-resume-and-links a:hover {
-    fill: black;
-    border: none;
-    border-radius: 0%;
+    background: none;
 }
 
 @keyframes fly-left {

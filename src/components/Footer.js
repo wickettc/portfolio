@@ -8,8 +8,13 @@ const Footer = () => {
             <footer>
                 <div>
                     Handcrafted by{' '}
-                    <a href="https://github.com/wickettc">Chase Wickett</a> ©
-                    2021
+                    <a
+                        className="footer-link"
+                        href="https://github.com/wickettc"
+                    >
+                        Chase Wickett
+                    </a>{' '}
+                    © 2021
                 </div>
                 <img src={chaseDevLogo} alt="My Logo" className="footer-logo" />
             </footer>

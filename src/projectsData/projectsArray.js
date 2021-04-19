@@ -63,7 +63,7 @@ const projs = [
         github: 'https://github.com/wickettc/Weather-App',
     },
     {
-        name: 'E-Commerce',
+        name: 'Store Front',
         skills: ['ReactJS', 'CSS'],
         img: shoppingCartImg,
         link: 'https://shopping-cart-git-main.wickettc.vercel.app/',

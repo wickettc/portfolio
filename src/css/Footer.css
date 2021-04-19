@@ -8,6 +8,10 @@ footer {
     position: relative;
 }
 
+.footer-link:hover {
+    color: rgb(110, 108, 108);
+}
+
 .footer-logo {
     margin-top: 2%;
     width: 10%;

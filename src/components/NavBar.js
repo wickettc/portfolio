@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import resume from '../documents/resume.pdf';
+import ChaseWickettResume from '../documents/ChaseWickettResume.pdf';
 import '../css/NavBar.css';
 
 const NavBar = () => {
@@ -71,7 +71,7 @@ const NavBar = () => {
                     Contact
                 </Link>
                 <a
-                    href={resume}
+                    href={ChaseWickettResume}
                     target="__blank"
                     onClick={() => {
                         setOpenNavBar(false);

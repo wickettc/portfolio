@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Home.css';
-import resume from '../documents/resume.pdf';
+import ChaseWickettResume from '../documents/ChaseWickettResume.pdf';
 import FadeInItem from '../components/FadeInItem';
 import westlandBowlPhoneLaptopImg from '../imgs/westlandbowl-phone-laptop.PNG';
 import chasebookPhoneLaptopImg from '../imgs/chasebook-mobile-laptop.png';
@@ -103,7 +103,7 @@ const Home = () => {
                 <FadeInItem divClass="home-resume-and-links">
                     <Link to="/projects">Check out my other projects!</Link>
                     <h2>OR</h2>
-                    <a href={resume} target="__blank">
+                    <a href={ChaseWickettResume} target="__blank">
                         My Resume
                     </a>
                 </FadeInItem>
