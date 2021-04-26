@@ -22,6 +22,7 @@ const ProjectCard = (props) => {
                                 target="__blank"
                                 href={props.github}
                                 className="project-button-link"
+                                aria-label="link to the project repository on github"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -37,6 +38,7 @@ const ProjectCard = (props) => {
                             className="project-button-link"
                             href={props.link}
                             target="__blank"
+                            aria-label="link to the project live"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

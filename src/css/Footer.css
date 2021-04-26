@@ -8,6 +8,10 @@ footer {
     position: relative;
 }
 
+.footer-link {
+    color: rgb(146, 68, 247);
+}
+
 .footer-link:hover {
     color: rgb(110, 108, 108);
 }

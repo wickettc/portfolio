@@ -36,6 +36,10 @@
     border-radius: 10%;
 }
 
+.home-title .my-name {
+    color: #22063ada;
+}
+
 .my-name {
     color: rgb(146, 68, 247);
     font-weight: 700;
