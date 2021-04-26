@@ -10,6 +10,7 @@ import blogImg from '../imgs/blogImg.PNG';
 import battleShipImg from '../imgs/battleshipImg.PNG';
 import chaseBookImg from '../imgs/chaseBookImg.PNG';
 import plannerImg from '../imgs/plannerImg.PNG';
+import stockImg from '../imgs/stockImg.PNG';
 
 const projs = [
     {
@@ -21,11 +22,25 @@ const projs = [
         github: 'https://github.com/wickettc/chasebook-frontend',
     },
     {
+        name: 'Stock Watcher',
+        skills: ['VueJS', 'ApexChartsJS', 'Firebase'],
+        img: stockImg,
+        link: 'https://stock-watcher-wickettc.vercel.app/',
+        github: 'https://github.com/wickettc/stock-watcher',
+    },
+    {
         name: 'Planner',
         skills: ['VueJS', 'Responsive', 'CSS'],
         img: plannerImg,
         link: 'https://planner-wickettc.vercel.app/',
         github: 'https://github.com/wickettc/planner',
+    },
+    {
+        name: 'Westland Bowl',
+        sub: 'Professional Project',
+        skills: ['VanillaJS', 'PHP', 'Bootstrap', 'Responsive'],
+        img: westlandBowlImg,
+        link: 'http://westlandbowl.com/',
     },
     {
         name: 'Blog',
@@ -40,13 +55,6 @@ const projs = [
         img: battleShipImg,
         link: 'https://battleship-wickettc.vercel.app/',
         github: 'https://github.com/wickettc/battleship',
-    },
-    {
-        name: 'Westland Bowl',
-        sub: 'Professional Project',
-        skills: ['VanillaJS', 'PHP', 'Bootstrap', 'Responsive'],
-        img: westlandBowlImg,
-        link: 'http://westlandbowl.com/',
     },
     {
         name: 'Members Only',
